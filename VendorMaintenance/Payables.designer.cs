@@ -48,13 +48,10 @@ namespace VendorMaintenance
     partial void InsertInvoiceLineItem(InvoiceLineItem instance);
     partial void UpdateInvoiceLineItem(InvoiceLineItem instance);
     partial void DeleteInvoiceLineItem(InvoiceLineItem instance);
-    partial void InsertVendorsSummary(VendorsSummary instance);
-    partial void UpdateVendorsSummary(VendorsSummary instance);
-    partial void DeleteVendorsSummary(VendorsSummary instance);
     #endregion
 		
 		public PayablesDataContext() : 
-				base(global::VendorMaintenance.Properties.Settings.Default.PayablesConnectionString1, mappingSource)
+				base(global::VendorMaintenance.Properties.Settings.Default.PayablesConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
@@ -130,14 +127,6 @@ namespace VendorMaintenance
 				return this.GetTable<InvoiceLineItem>();
 			}
 		}
-		
-		public System.Data.Linq.Table<VendorsSummary> VendorsSummaries
-		{
-			get
-			{
-				return this.GetTable<VendorsSummary>();
-			}
-		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Vendors")]
@@ -171,8 +160,6 @@ namespace VendorMaintenance
 		private int _DefaultAccountNo;
 		
 		private EntitySet<Invoice> _Invoices;
-		
-		private EntityRef<VendorsSummary> _VendorsSummary;
 		
 		private EntityRef<State> _State1;
 		
@@ -213,7 +200,6 @@ namespace VendorMaintenance
 		public Vendor()
 		{
 			this._Invoices = new EntitySet<Invoice>(new Action<Invoice>(this.attach_Invoices), new Action<Invoice>(this.detach_Invoices));
-			this._VendorsSummary = default(EntityRef<VendorsSummary>);
 			this._State1 = default(EntityRef<State>);
 			this._Term = default(EntityRef<Term>);
 			this._GLAccount = default(EntityRef<GLAccount>);
@@ -482,35 +468,6 @@ namespace VendorMaintenance
 			set
 			{
 				this._Invoices.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Vendor_VendorsSummary", Storage="_VendorsSummary", ThisKey="VendorID", OtherKey="VendorID", IsUnique=true, IsForeignKey=false)]
-		public VendorsSummary VendorsSummary
-		{
-			get
-			{
-				return this._VendorsSummary.Entity;
-			}
-			set
-			{
-				VendorsSummary previousValue = this._VendorsSummary.Entity;
-				if (((previousValue != value) 
-							|| (this._VendorsSummary.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._VendorsSummary.Entity = null;
-						previousValue.Vendor = null;
-					}
-					this._VendorsSummary.Entity = value;
-					if ((value != null))
-					{
-						value.Vendor = this;
-					}
-					this.SendPropertyChanged("VendorsSummary");
-				}
 			}
 		}
 		
@@ -1722,253 +1679,6 @@ namespace VendorMaintenance
 						this._InvoiceID = default(int);
 					}
 					this.SendPropertyChanged("Invoice");
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.VendorsSummary")]
-	public partial class VendorsSummary : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _VendorID;
-		
-		private decimal _SumOfInvoices;
-		
-		private System.Nullable<System.DateTime> _LastInvoiceDate;
-		
-		private decimal _SumOfPayments;
-		
-		private System.Nullable<System.DateTime> _LastPaymentDate;
-		
-		private decimal _SumOfCredits;
-		
-		private decimal _BalanceDue;
-		
-		private EntityRef<Vendor> _Vendor;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnVendorIDChanging(int value);
-    partial void OnVendorIDChanged();
-    partial void OnSumOfInvoicesChanging(decimal value);
-    partial void OnSumOfInvoicesChanged();
-    partial void OnLastInvoiceDateChanging(System.Nullable<System.DateTime> value);
-    partial void OnLastInvoiceDateChanged();
-    partial void OnSumOfPaymentsChanging(decimal value);
-    partial void OnSumOfPaymentsChanged();
-    partial void OnLastPaymentDateChanging(System.Nullable<System.DateTime> value);
-    partial void OnLastPaymentDateChanged();
-    partial void OnSumOfCreditsChanging(decimal value);
-    partial void OnSumOfCreditsChanged();
-    partial void OnBalanceDueChanging(decimal value);
-    partial void OnBalanceDueChanged();
-    #endregion
-		
-		public VendorsSummary()
-		{
-			this._Vendor = default(EntityRef<Vendor>);
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VendorID", DbType="Int NOT NULL", IsPrimaryKey=true)]
-		public int VendorID
-		{
-			get
-			{
-				return this._VendorID;
-			}
-			set
-			{
-				if ((this._VendorID != value))
-				{
-					if (this._Vendor.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.OnVendorIDChanging(value);
-					this.SendPropertyChanging();
-					this._VendorID = value;
-					this.SendPropertyChanged("VendorID");
-					this.OnVendorIDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SumOfInvoices", DbType="Money NOT NULL")]
-		public decimal SumOfInvoices
-		{
-			get
-			{
-				return this._SumOfInvoices;
-			}
-			set
-			{
-				if ((this._SumOfInvoices != value))
-				{
-					this.OnSumOfInvoicesChanging(value);
-					this.SendPropertyChanging();
-					this._SumOfInvoices = value;
-					this.SendPropertyChanged("SumOfInvoices");
-					this.OnSumOfInvoicesChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LastInvoiceDate", DbType="SmallDateTime")]
-		public System.Nullable<System.DateTime> LastInvoiceDate
-		{
-			get
-			{
-				return this._LastInvoiceDate;
-			}
-			set
-			{
-				if ((this._LastInvoiceDate != value))
-				{
-					this.OnLastInvoiceDateChanging(value);
-					this.SendPropertyChanging();
-					this._LastInvoiceDate = value;
-					this.SendPropertyChanged("LastInvoiceDate");
-					this.OnLastInvoiceDateChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SumOfPayments", DbType="Money NOT NULL")]
-		public decimal SumOfPayments
-		{
-			get
-			{
-				return this._SumOfPayments;
-			}
-			set
-			{
-				if ((this._SumOfPayments != value))
-				{
-					this.OnSumOfPaymentsChanging(value);
-					this.SendPropertyChanging();
-					this._SumOfPayments = value;
-					this.SendPropertyChanged("SumOfPayments");
-					this.OnSumOfPaymentsChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LastPaymentDate", DbType="SmallDateTime")]
-		public System.Nullable<System.DateTime> LastPaymentDate
-		{
-			get
-			{
-				return this._LastPaymentDate;
-			}
-			set
-			{
-				if ((this._LastPaymentDate != value))
-				{
-					this.OnLastPaymentDateChanging(value);
-					this.SendPropertyChanging();
-					this._LastPaymentDate = value;
-					this.SendPropertyChanged("LastPaymentDate");
-					this.OnLastPaymentDateChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SumOfCredits", DbType="Money NOT NULL")]
-		public decimal SumOfCredits
-		{
-			get
-			{
-				return this._SumOfCredits;
-			}
-			set
-			{
-				if ((this._SumOfCredits != value))
-				{
-					this.OnSumOfCreditsChanging(value);
-					this.SendPropertyChanging();
-					this._SumOfCredits = value;
-					this.SendPropertyChanged("SumOfCredits");
-					this.OnSumOfCreditsChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BalanceDue", DbType="Money NOT NULL")]
-		public decimal BalanceDue
-		{
-			get
-			{
-				return this._BalanceDue;
-			}
-			set
-			{
-				if ((this._BalanceDue != value))
-				{
-					this.OnBalanceDueChanging(value);
-					this.SendPropertyChanging();
-					this._BalanceDue = value;
-					this.SendPropertyChanged("BalanceDue");
-					this.OnBalanceDueChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Vendor_VendorsSummary", Storage="_Vendor", ThisKey="VendorID", OtherKey="VendorID", IsForeignKey=true)]
-		public Vendor Vendor
-		{
-			get
-			{
-				return this._Vendor.Entity;
-			}
-			set
-			{
-				Vendor previousValue = this._Vendor.Entity;
-				if (((previousValue != value) 
-							|| (this._Vendor.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._Vendor.Entity = null;
-						previousValue.VendorsSummary = null;
-					}
-					this._Vendor.Entity = value;
-					if ((value != null))
-					{
-						value.VendorsSummary = this;
-						this._VendorID = value.VendorID;
-					}
-					else
-					{
-						this._VendorID = default(int);
-					}
-					this.SendPropertyChanged("Vendor");
 				}
 			}
 		}

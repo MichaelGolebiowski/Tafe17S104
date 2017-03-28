@@ -37,7 +37,6 @@
             this.tbZipCode2 = new System.Windows.Forms.TextBox();
             this.btnAccept = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
             this.tbStateCode = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -64,18 +63,18 @@
             this.lblStateZip1.AutoSize = true;
             this.lblStateZip1.Location = new System.Drawing.Point(11, 75);
             this.lblStateZip1.Name = "lblStateZip1";
-            this.lblStateZip1.Size = new System.Drawing.Size(50, 13);
+            this.lblStateZip1.Size = new System.Drawing.Size(44, 13);
             this.lblStateZip1.TabIndex = 2;
-            this.lblStateZip1.Text = "Zip Code";
+            this.lblStateZip1.Text = "First Zip";
             // 
             // lblStateZip2
             // 
             this.lblStateZip2.AutoSize = true;
             this.lblStateZip2.Location = new System.Drawing.Point(11, 101);
             this.lblStateZip2.Name = "lblStateZip2";
-            this.lblStateZip2.Size = new System.Drawing.Size(59, 13);
+            this.lblStateZip2.Size = new System.Drawing.Size(45, 13);
             this.lblStateZip2.TabIndex = 3;
-            this.lblStateZip2.Text = "Zip Code 2";
+            this.lblStateZip2.Text = "Last Zip";
             // 
             // tbStateName
             // 
@@ -102,7 +101,7 @@
             // 
             this.btnAccept.Location = new System.Drawing.Point(14, 144);
             this.btnAccept.Name = "btnAccept";
-            this.btnAccept.Size = new System.Drawing.Size(75, 23);
+            this.btnAccept.Size = new System.Drawing.Size(169, 23);
             this.btnAccept.TabIndex = 8;
             this.btnAccept.Text = "Accept";
             this.btnAccept.UseVisualStyleBackColor = true;
@@ -118,16 +117,6 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // btnDelete
-            // 
-            this.btnDelete.Location = new System.Drawing.Point(108, 144);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
-            this.btnDelete.TabIndex = 10;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
             // tbStateCode
             // 
             this.tbStateCode.Location = new System.Drawing.Point(83, 16);
@@ -141,7 +130,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(199, 203);
             this.Controls.Add(this.tbStateCode);
-            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnAccept);
             this.Controls.Add(this.tbZipCode2);
@@ -169,7 +157,6 @@
         private System.Windows.Forms.TextBox tbZipCode2;
         private System.Windows.Forms.Button btnAccept;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.TextBox tbStateCode;
     }
 }

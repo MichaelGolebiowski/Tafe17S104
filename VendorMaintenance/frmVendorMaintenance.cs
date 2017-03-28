@@ -134,5 +134,19 @@ namespace VendorMaintenance
         {
             this.Close();
         }
+		
+		
+		//REMOVE ME - Test button for feat_state1
+        private void btnState_Click(object sender, EventArgs e)
+        {
+            /* This is borrowed from the example but doesn't work.
+             * Use the Show() method below instead
+            frmAddModifyState f;
+            f = new frmAddModifyState();*/
+
+            frmAddModifyState frm = new frmAddModifyState();
+            frm.Show();
+        }
+        //End Test Button
     }
 }

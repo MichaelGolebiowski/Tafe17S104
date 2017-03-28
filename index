@@ -1,0 +1,12 @@
+e!DOCTYPE html>
+<html>
+   <head>
+      <title>Project website</title>
+      <link rel=”stylesheet” href=”main.css”>	
+   </head>
+   <body>
+        <h1>Our project is a repository set up for illustration of TortoiseGit and GitHub functions</h1>
+        <p> Hi. Our name's are Caleb, Michael & Aden</p>
+        <p> Thank you for visting my site!</p>
+   </body>
+</html>

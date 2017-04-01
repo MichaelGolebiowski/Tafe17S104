@@ -38,13 +38,15 @@
             this.txtTermsID = new System.Windows.Forms.TextBox();
             this.txtDueDays = new System.Windows.Forms.TextBox();
             this.lblDueDays = new System.Windows.Forms.Label();
+            this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnModify
             // 
-            this.btnModify.Location = new System.Drawing.Point(146, 211);
+            this.btnModify.Location = new System.Drawing.Point(195, 260);
+            this.btnModify.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnModify.Name = "btnModify";
-            this.btnModify.Size = new System.Drawing.Size(86, 31);
+            this.btnModify.Size = new System.Drawing.Size(115, 38);
             this.btnModify.TabIndex = 13;
             this.btnModify.Text = "Modify";
             this.btnModify.UseVisualStyleBackColor = true;
@@ -52,9 +54,10 @@
             // 
             // btnGetTerm
             // 
-            this.btnGetTerm.Location = new System.Drawing.Point(256, 60);
+            this.btnGetTerm.Location = new System.Drawing.Point(341, 74);
+            this.btnGetTerm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGetTerm.Name = "btnGetTerm";
-            this.btnGetTerm.Size = new System.Drawing.Size(91, 30);
+            this.btnGetTerm.Size = new System.Drawing.Size(121, 37);
             this.btnGetTerm.TabIndex = 9;
             this.btnGetTerm.Text = "Get Term";
             this.btnGetTerm.UseVisualStyleBackColor = true;
@@ -62,9 +65,10 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(338, 211);
+            this.btnClear.Location = new System.Drawing.Point(451, 260);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(86, 31);
+            this.btnClear.Size = new System.Drawing.Size(115, 38);
             this.btnClear.TabIndex = 14;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -72,9 +76,10 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(44, 211);
+            this.btnAdd.Location = new System.Drawing.Point(59, 260);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(77, 31);
+            this.btnAdd.Size = new System.Drawing.Size(103, 38);
             this.btnAdd.TabIndex = 12;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -82,57 +87,75 @@
             // 
             // txtDescription
             // 
-            this.txtDescription.Location = new System.Drawing.Point(107, 159);
+            this.txtDescription.Location = new System.Drawing.Point(143, 196);
+            this.txtDescription.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(197, 20);
+            this.txtDescription.Size = new System.Drawing.Size(261, 22);
             this.txtDescription.TabIndex = 11;
             // 
             // lblDescription
             // 
             this.lblDescription.AutoSize = true;
-            this.lblDescription.Location = new System.Drawing.Point(41, 162);
+            this.lblDescription.Location = new System.Drawing.Point(55, 199);
+            this.lblDescription.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(60, 13);
+            this.lblDescription.Size = new System.Drawing.Size(79, 17);
             this.lblDescription.TabIndex = 3;
             this.lblDescription.Text = "Description";
             // 
             // lblTermsID
             // 
             this.lblTermsID.AutoSize = true;
-            this.lblTermsID.Location = new System.Drawing.Point(41, 69);
+            this.lblTermsID.Location = new System.Drawing.Point(55, 85);
+            this.lblTermsID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTermsID.Name = "lblTermsID";
-            this.lblTermsID.Size = new System.Drawing.Size(47, 13);
+            this.lblTermsID.Size = new System.Drawing.Size(61, 17);
             this.lblTermsID.TabIndex = 1;
             this.lblTermsID.Text = "TermsID";
             // 
             // txtTermsID
             // 
-            this.txtTermsID.Location = new System.Drawing.Point(107, 66);
+            this.txtTermsID.Location = new System.Drawing.Point(143, 81);
+            this.txtTermsID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTermsID.Name = "txtTermsID";
-            this.txtTermsID.Size = new System.Drawing.Size(100, 20);
+            this.txtTermsID.Size = new System.Drawing.Size(132, 22);
             this.txtTermsID.TabIndex = 8;
             // 
             // txtDueDays
             // 
-            this.txtDueDays.Location = new System.Drawing.Point(107, 115);
+            this.txtDueDays.Location = new System.Drawing.Point(143, 142);
+            this.txtDueDays.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDueDays.Name = "txtDueDays";
-            this.txtDueDays.Size = new System.Drawing.Size(100, 20);
+            this.txtDueDays.Size = new System.Drawing.Size(132, 22);
             this.txtDueDays.TabIndex = 10;
             // 
             // lblDueDays
             // 
             this.lblDueDays.AutoSize = true;
-            this.lblDueDays.Location = new System.Drawing.Point(41, 118);
+            this.lblDueDays.Location = new System.Drawing.Point(55, 145);
+            this.lblDueDays.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDueDays.Name = "lblDueDays";
-            this.lblDueDays.Size = new System.Drawing.Size(54, 13);
+            this.lblDueDays.Size = new System.Drawing.Size(70, 17);
             this.lblDueDays.TabIndex = 2;
             this.lblDueDays.Text = "Due Days";
             // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(451, 331);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(115, 38);
+            this.btnExit.TabIndex = 15;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // frmTerm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(468, 331);
+            this.ClientSize = new System.Drawing.Size(624, 389);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.txtDueDays);
             this.Controls.Add(this.lblDueDays);
             this.Controls.Add(this.btnModify);
@@ -143,7 +166,7 @@
             this.Controls.Add(this.lblDescription);
             this.Controls.Add(this.lblTermsID);
             this.Controls.Add(this.txtTermsID);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmTerm";
             this.Text = "frmTerm";
             this.Load += new System.EventHandler(this.frmTerm_Load);
@@ -164,5 +187,6 @@
         private System.Windows.Forms.TextBox txtTermsID;
         private System.Windows.Forms.TextBox txtDueDays;
         private System.Windows.Forms.Label lblDueDays;
+        private System.Windows.Forms.Button btnExit;
     }
 }

@@ -41,56 +41,63 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(50, 58);
+            this.label1.Location = new System.Drawing.Point(67, 71);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 13);
+            this.label1.Size = new System.Drawing.Size(61, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "TermsID";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(50, 110);
+            this.label2.Location = new System.Drawing.Point(67, 135);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 13);
+            this.label2.Size = new System.Drawing.Size(70, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "Due Days";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(50, 165);
+            this.label3.Location = new System.Drawing.Point(67, 203);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 13);
+            this.label3.Size = new System.Drawing.Size(79, 17);
             this.label3.TabIndex = 2;
             this.label3.Text = "Description";
             // 
             // txtTermsID
             // 
-            this.txtTermsID.Location = new System.Drawing.Point(137, 55);
+            this.txtTermsID.Location = new System.Drawing.Point(183, 68);
+            this.txtTermsID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTermsID.Name = "txtTermsID";
-            this.txtTermsID.Size = new System.Drawing.Size(100, 20);
+            this.txtTermsID.Size = new System.Drawing.Size(132, 22);
             this.txtTermsID.TabIndex = 3;
             // 
             // txtDueDays
             // 
-            this.txtDueDays.Location = new System.Drawing.Point(137, 107);
+            this.txtDueDays.Location = new System.Drawing.Point(183, 132);
+            this.txtDueDays.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDueDays.Name = "txtDueDays";
-            this.txtDueDays.Size = new System.Drawing.Size(100, 20);
+            this.txtDueDays.Size = new System.Drawing.Size(132, 22);
             this.txtDueDays.TabIndex = 4;
             // 
             // txtDescription
             // 
-            this.txtDescription.Location = new System.Drawing.Point(137, 162);
+            this.txtDescription.Location = new System.Drawing.Point(183, 199);
+            this.txtDescription.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(100, 20);
+            this.txtDescription.Size = new System.Drawing.Size(132, 22);
             this.txtDescription.TabIndex = 5;
             // 
             // btnAccept
             // 
-            this.btnAccept.Location = new System.Drawing.Point(53, 237);
+            this.btnAccept.Location = new System.Drawing.Point(71, 292);
+            this.btnAccept.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAccept.Name = "btnAccept";
-            this.btnAccept.Size = new System.Drawing.Size(73, 34);
+            this.btnAccept.Size = new System.Drawing.Size(97, 42);
             this.btnAccept.TabIndex = 6;
             this.btnAccept.Text = "Accept";
             this.btnAccept.UseVisualStyleBackColor = true;
@@ -98,9 +105,10 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(164, 237);
+            this.btnCancel.Location = new System.Drawing.Point(219, 292);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(73, 34);
+            this.btnCancel.Size = new System.Drawing.Size(97, 42);
             this.btnCancel.TabIndex = 7;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -108,9 +116,9 @@
             // 
             // frmAddModifyTerm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(312, 318);
+            this.ClientSize = new System.Drawing.Size(416, 391);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnAccept);
             this.Controls.Add(this.txtDescription);
@@ -119,8 +127,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmAddModifyTerm";
             this.Text = "frmAddModifyTerm";
+            this.Load += new System.EventHandler(this.frmAddModifyTerm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

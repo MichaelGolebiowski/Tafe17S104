@@ -28,6 +28,7 @@ namespace VendorMaintenance
         private void btnClear_Click(object sender, EventArgs e)
         {
             txtTermsID.Text = "";
+            txtDueDays.Text = "";
             txtDescription.Text = "";
         }
 
@@ -114,6 +115,11 @@ namespace VendorMaintenance
             txtDescription.Text = "";
             btnModify.Enabled = false;
             //btnDelete.Enabled = false
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

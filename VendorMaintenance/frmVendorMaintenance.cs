@@ -134,5 +134,14 @@ namespace VendorMaintenance
         {
             this.Close();
         }
+
+        private void btnToTerm_Click(object sender, EventArgs e)
+        {
+            frmTerm f;
+            f = new frmTerm();
+            f.Show();
+        }
+
+
     }
 }

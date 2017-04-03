@@ -47,8 +47,6 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.Label2 = new System.Windows.Forms.Label();
             this.btnState = new System.Windows.Forms.Button();
-            this.lblState = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnExit
@@ -227,31 +225,13 @@
             // 
             // btnState
             // 
-            this.btnState.Location = new System.Drawing.Point(98, 234);
+            this.btnState.Location = new System.Drawing.Point(18, 234);
             this.btnState.Name = "btnState";
             this.btnState.Size = new System.Drawing.Size(75, 23);
             this.btnState.TabIndex = 51;
-            this.btnState.Text = "Add";
+            this.btnState.Text = "Modify State";
             this.btnState.UseVisualStyleBackColor = true;
             this.btnState.Click += new System.EventHandler(this.btnState_Click);
-            // 
-            // lblState
-            // 
-            this.lblState.AutoSize = true;
-            this.lblState.Location = new System.Drawing.Point(15, 244);
-            this.lblState.Name = "lblState";
-            this.lblState.Size = new System.Drawing.Size(32, 13);
-            this.lblState.TabIndex = 52;
-            this.lblState.Text = "State";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(179, 234);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 53;
-            this.button1.Text = "Modify";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // frmVendorMaintenance
             // 
@@ -259,8 +239,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(380, 262);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.lblState);
             this.Controls.Add(this.btnState);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnDelete);
@@ -310,8 +288,6 @@
         internal System.Windows.Forms.TextBox txtName;
         internal System.Windows.Forms.Label Label2;
         private System.Windows.Forms.Button btnState;
-        private System.Windows.Forms.Label lblState;
-        private System.Windows.Forms.Button button1;
     }
 }
 

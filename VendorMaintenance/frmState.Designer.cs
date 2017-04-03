@@ -87,6 +87,7 @@
             this.btnAdd.TabIndex = 5;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnModify
             // 
@@ -96,6 +97,7 @@
             this.btnModify.TabIndex = 6;
             this.btnModify.Text = "Modify";
             this.btnModify.UseVisualStyleBackColor = true;
+            this.btnModify.Click += new System.EventHandler(this.btnModify_Click);
             // 
             // btnCancel
             // 
@@ -142,6 +144,7 @@
             this.btnFetch.TabIndex = 11;
             this.btnFetch.Text = "Fetch State";
             this.btnFetch.UseVisualStyleBackColor = true;
+            this.btnFetch.Click += new System.EventHandler(this.btnFetch_Click);
             // 
             // frmState
             // 

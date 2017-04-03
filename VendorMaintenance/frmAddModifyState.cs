@@ -16,6 +16,8 @@ namespace VendorMaintenance
         {
             InitializeComponent();
         }
+        public bool addState;
+        public State state;
 
         private void btnCancel_Click(object sender, EventArgs e)
         {

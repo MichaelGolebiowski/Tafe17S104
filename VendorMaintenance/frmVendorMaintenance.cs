@@ -134,5 +134,14 @@ namespace VendorMaintenance
         {
             this.Close();
         }
+		
+		
+		//REMOVE ME - Test button for feat_state1
+        private void btnState_Click(object sender, EventArgs e)
+        {
+
+            frmState frm = new frmState();
+            frm.Show();
+        }
     }
 }

@@ -67,6 +67,12 @@
     <Compile Include="frmAddModifyGLAccount.designer.cs">
       <DependentUpon>frmAddModifyGLAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAddModifyState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddModifyState.Designer.cs">
+      <DependentUpon>frmAddModifyState.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAddModifyVendor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,12 @@
     </Compile>
     <Compile Include="frmGLAccount.designer.cs">
       <DependentUpon>frmGLAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmState.Designer.cs">
+      <DependentUpon>frmState.cs</DependentUpon>
     </Compile>
     <Compile Include="frmVendorMaintenance.cs">
       <SubType>Form</SubType>
@@ -103,6 +115,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmGLAccount.resx">
       <DependentUpon>frmGLAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddModifyState.resx">
+      <DependentUpon>frmAddModifyState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmState.resx">
+      <DependentUpon>frmState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVendorMaintenance.resx">
+      <DependentUpon>frmVendorMaintenance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

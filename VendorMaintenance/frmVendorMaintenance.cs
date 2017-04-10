@@ -143,5 +143,14 @@ namespace VendorMaintenance
             frmState frm = new frmState();
             frm.Show();
         }
+
+        private void btnToTerm_Click(object sender, EventArgs e)
+        {
+            frmTerm f;
+            f = new frmTerm();
+            f.Show();
+        }
+
+
     }
 }

@@ -151,6 +151,13 @@ namespace VendorMaintenance
             f.Show();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmGLAccount f;
+            f = new frmGLAccount();
+            f.Show();
+        }
+
 
     }
 }

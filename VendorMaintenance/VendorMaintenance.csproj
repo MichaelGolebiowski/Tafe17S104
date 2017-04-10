@@ -122,9 +122,6 @@
     <None Include="Payables.dbml.layout">
       <DependentUpon>Payables.dbml</DependentUpon>
     </None>
-    <EmbeddedResource Include="frmAddModifyGLAccount.resx">
-      <DependentUpon>frmAddModifyGLAccount.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmGLAccount.resx">
       <DependentUpon>frmGLAccount.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,14 +134,8 @@
     <EmbeddedResource Include="frmVendorMaintenance.resx">
       <DependentUpon>frmVendorMaintenance.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAddModifyTerm.resx">
-      <DependentUpon>frmAddModifyTerm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmTerm.resx">
       <DependentUpon>frmTerm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmVendorMaintenance.resx">
-      <DependentUpon>frmVendorMaintenance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

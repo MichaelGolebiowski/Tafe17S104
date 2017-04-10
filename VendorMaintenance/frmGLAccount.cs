@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -120,6 +118,11 @@ namespace VendorMaintenance
             txtDescription.Text = selectedGLAccount.Description;
             //cmdModify.Enabled = true;
             //cmdDelete.Enabled = true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
        

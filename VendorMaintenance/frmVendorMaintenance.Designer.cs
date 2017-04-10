@@ -48,12 +48,12 @@
             this.Label2 = new System.Windows.Forms.Label();
             this.btnState = new System.Windows.Forms.Button();
             this.btnToTerm = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnExit
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Location = new System.Drawing.Point(284, 234);
             this.btnExit.Location = new System.Drawing.Point(378, 252);
             this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
@@ -66,7 +66,6 @@
             // btnDelete
             // 
             this.btnDelete.Enabled = false;
-            this.btnDelete.Location = new System.Drawing.Point(179, 205);
             this.btnDelete.Location = new System.Drawing.Point(239, 252);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete.Name = "btnDelete";
@@ -79,7 +78,6 @@
             // btnModify
             // 
             this.btnModify.Enabled = false;
-            this.btnModify.Location = new System.Drawing.Point(98, 205);
             this.btnModify.Location = new System.Drawing.Point(131, 252);
             this.btnModify.Margin = new System.Windows.Forms.Padding(4);
             this.btnModify.Name = "btnModify";
@@ -91,7 +89,6 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(18, 205);
             this.btnAdd.Location = new System.Drawing.Point(23, 252);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
@@ -103,7 +100,6 @@
             // 
             // txtState
             // 
-            this.txtState.Location = new System.Drawing.Point(79, 155);
             this.txtState.Location = new System.Drawing.Point(105, 191);
             this.txtState.Margin = new System.Windows.Forms.Padding(4);
             this.txtState.Name = "txtState";
@@ -114,7 +110,6 @@
             // 
             // btnGetVendor
             // 
-            this.btnGetVendor.Location = new System.Drawing.Point(136, 14);
             this.btnGetVendor.Location = new System.Drawing.Point(181, 17);
             this.btnGetVendor.Margin = new System.Windows.Forms.Padding(4);
             this.btnGetVendor.Name = "btnGetVendor";
@@ -126,7 +121,6 @@
             // 
             // txtVendorID
             // 
-            this.txtVendorID.Location = new System.Drawing.Point(79, 14);
             this.txtVendorID.Location = new System.Drawing.Point(105, 17);
             this.txtVendorID.Margin = new System.Windows.Forms.Padding(4);
             this.txtVendorID.Name = "txtVendorID";
@@ -145,7 +139,6 @@
             // 
             // txtZipCode
             // 
-            this.txtZipCode.Location = new System.Drawing.Point(279, 156);
             this.txtZipCode.Location = new System.Drawing.Point(372, 192);
             this.txtZipCode.Margin = new System.Windows.Forms.Padding(4);
             this.txtZipCode.MaxLength = 20;
@@ -175,7 +168,6 @@
             // 
             // txtCity
             // 
-            this.txtCity.Location = new System.Drawing.Point(79, 130);
             this.txtCity.Location = new System.Drawing.Point(105, 160);
             this.txtCity.Margin = new System.Windows.Forms.Padding(4);
             this.txtCity.MaxLength = 50;
@@ -196,7 +188,6 @@
             // 
             // txtAddress2
             // 
-            this.txtAddress2.Location = new System.Drawing.Point(79, 104);
             this.txtAddress2.Location = new System.Drawing.Point(105, 128);
             this.txtAddress2.Margin = new System.Windows.Forms.Padding(4);
             this.txtAddress2.MaxLength = 50;
@@ -208,7 +199,6 @@
             // 
             // txtAddress1
             // 
-            this.txtAddress1.Location = new System.Drawing.Point(79, 78);
             this.txtAddress1.Location = new System.Drawing.Point(105, 96);
             this.txtAddress1.Margin = new System.Windows.Forms.Padding(4);
             this.txtAddress1.MaxLength = 50;
@@ -229,7 +219,6 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(79, 52);
             this.txtName.Location = new System.Drawing.Point(105, 64);
             this.txtName.Margin = new System.Windows.Forms.Padding(4);
             this.txtName.MaxLength = 50;
@@ -250,33 +239,43 @@
             // 
             // btnState
             // 
-            this.btnState.Location = new System.Drawing.Point(18, 234);
+            this.btnState.Location = new System.Drawing.Point(131, 294);
             this.btnState.Name = "btnState";
             this.btnState.Size = new System.Drawing.Size(75, 23);
             this.btnState.TabIndex = 51;
-            this.btnState.Text = "Modify State";
+            this.btnState.Text = "State";
             this.btnState.UseVisualStyleBackColor = true;
             this.btnState.Click += new System.EventHandler(this.btnState_Click);
             // 
             // btnToTerm
             // 
-            this.btnToTerm.Location = new System.Drawing.Point(23, 289);
+            this.btnToTerm.Location = new System.Drawing.Point(23, 294);
             this.btnToTerm.Margin = new System.Windows.Forms.Padding(4);
             this.btnToTerm.Name = "btnToTerm";
-            this.btnToTerm.Size = new System.Drawing.Size(100, 28);
+            this.btnToTerm.Size = new System.Drawing.Size(75, 23);
             this.btnToTerm.TabIndex = 51;
-            this.btnToTerm.Text = "To Term";
+            this.btnToTerm.Text = "Term";
             this.btnToTerm.UseVisualStyleBackColor = true;
             this.btnToTerm.Click += new System.EventHandler(this.btnToTerm_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(239, 294);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 52;
+            this.button1.Text = "GLAccount";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmVendorMaintenance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(380, 262);
-            this.Controls.Add(this.btnState);
             this.ClientSize = new System.Drawing.Size(506, 330);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnState);
             this.Controls.Add(this.btnToTerm);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnDelete);
@@ -328,6 +327,7 @@
         internal System.Windows.Forms.Label Label2;
         private System.Windows.Forms.Button btnState;
         internal System.Windows.Forms.Button btnToTerm;
+        private System.Windows.Forms.Button button1;
     }
 }
 

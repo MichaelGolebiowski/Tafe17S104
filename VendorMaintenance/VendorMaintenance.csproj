@@ -61,11 +61,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataContext.cs" />
+    <Compile Include="frmAddModifyGLAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddModifyGLAccount.designer.cs">
+      <DependentUpon>frmAddModifyGLAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAddModifyVendor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmAddModifyVendor.Designer.cs">
       <DependentUpon>frmAddModifyVendor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGLAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGLAccount.designer.cs">
+      <DependentUpon>frmGLAccount.cs</DependentUpon>
     </Compile>
     <Compile Include="frmVendorMaintenance.cs">
       <SubType>Form</SubType>
@@ -86,6 +98,12 @@
     <None Include="Payables.dbml.layout">
       <DependentUpon>Payables.dbml</DependentUpon>
     </None>
+    <EmbeddedResource Include="frmAddModifyGLAccount.resx">
+      <DependentUpon>frmAddModifyGLAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGLAccount.resx">
+      <DependentUpon>frmGLAccount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
